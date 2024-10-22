@@ -1,17 +1,16 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Note from './note'
+import Highlight from './highlight';
 
 const HighlightSection = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: {fields: {source: {eq: "notes"}}}) {
+      allMdx(filter: {fields: {source: {eq: "highlights"}}}) {
         nodes {
           frontmatter {
             title
-            stage
-            planted
-            modified
+            cover_url
           }
         }
       }
@@ -22,7 +21,7 @@ const HighlightSection = () => {
     <div>
       {
         data.allMdx.nodes.map((node) => (
-          <Note title={node.frontmatter.title} stage={node.frontmatter.stage} />
+          <Highlight title={node.frontmatter.title} coverUrl={node.frontmatter.cover_url} />
         ))
       }
     </div>

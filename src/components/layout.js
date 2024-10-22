@@ -1,11 +1,15 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { GlobalStyle } from './GlobalStyle'
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <StyledLayout>
-      {children}
-    </StyledLayout>
+    <React.Fragment>
+      <GlobalStyle />
+      <StyledLayout>
+        {children}
+      </StyledLayout>
+    </React.Fragment>
   )
 }
 
