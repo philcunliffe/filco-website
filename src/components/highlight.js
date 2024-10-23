@@ -6,7 +6,6 @@ const Highlight = ({ title, coverUrl }) => {
   return (
     <div className='highlight-card' onClick={() => navigate(`/garden/${slugify(title)}`)}>
       <img src={coverUrl} />
-      <h3>{title}</h3>
     </div>
   )
 }

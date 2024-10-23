@@ -7,15 +7,31 @@ import slugify from '@sindresorhus/slugify';
 const Note = ({ title, stage, lastTended, tags }) => {
   return (
     <StyledNote onClick={() => navigate(`/garden/${slugify(title)}`)}>
-      <h3><StageIcon size={'test'} stage={stage} />{title}</h3>
+      <IconContainer>
+        <StageIcon size={'test'} stage={stage} />
+      </IconContainer>
+      <InfoContainer>
+        <h5>{title}</h5>
+      </InfoContainer>
     </StyledNote>
   )
 }
 
 const StyledNote = styled.div`
-  border: 1px solid black;
-  width: 200px;
-  height: 75px;
+display: flex;
+flex: 12rem 1 1;
+`
+
+const IconContainer = styled.div`
+display: flex;
+flex: 30% 0;
+font-size: 3rem;
+align-items: center;
+justify-content: center;
+`;
+
+const InfoContainer = styled.div`
+flex-grow: 1
 `
 
 export default Note;

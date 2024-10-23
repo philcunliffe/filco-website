@@ -3,7 +3,7 @@ import { stageToIcon } from '../utils/stageToIcon';
 
 const StageIcon = ({ stage, size }) => {
   return (
-    <span className={size} >
+    <span>
       {stageToIcon(stage)}
     </span>
   )
