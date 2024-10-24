@@ -20,7 +20,7 @@ const HighlightSection = () => {
 
   return (
     <StyledHighlightSection>
-      <h4>Recent Highlights</h4>
+      <h5>Highlights</h5>
       <FlexBox>
         {
           data.allMdx.nodes.map((node) => (
@@ -34,8 +34,7 @@ const HighlightSection = () => {
 
 const StyledHighlightSection = styled.div`
 display: grid;
-grid-column-start: 9;
-grid-column-end: 12;
+grid-area: highlights;
 `
 
 const FlexBox = styled.div`

@@ -21,7 +21,7 @@ const NoteSection = () => {
 
   return (
     <StyledNoteSection>
-      <h4>Recent Notes</h4>
+      <h5>Notes</h5>
       <FlexBox>
         {
           data.allMdx.nodes.map((node) => (
@@ -34,17 +34,17 @@ const NoteSection = () => {
 }
 
 const StyledNoteSection = styled.div`
-grid-column: 1 / 8;
+grid-area: notes;
 `
 
 const FlexBox = styled.div`
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: left;
 align-items: flex-start;
 padding-top: var(--space-s);
-row-gap: var(--grid-gutter);
-column-gap: var(--grid-gutter);
+row-gap: var(--space-s);
+column-gap: var(--space-s);
 `
 
 export default NoteSection

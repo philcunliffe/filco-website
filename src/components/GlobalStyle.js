@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+@import "@thecae/remark-obsidian/obsidian.module.css";
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
@@ -36,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
   --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
   --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
   --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+  --step-6: clamp(3.3592rem, 2.8691rem + 2.4507vw, 4.7684rem);
 
   /* Grid */
   --grid-max-width: 77.50rem;
@@ -99,6 +101,10 @@ export const GlobalStyle = createGlobalStyle`
 	--parador-stone-400: #8E8C86;  
   --cream-stone: #f4f1ea;
   --black: #333;
+
+  --font-serif: "Koh Santepheap", serif;
+  --font-sans: "Quicksand", sans-serif;
+  --font-body: "Koh Santepheap", serif; 
 }
 
 .u-container {
@@ -160,6 +166,9 @@ body {
   background: var(--cream-stone);
   padding: var(--space-m);
   color: var(--mud-brown-900);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 h1, h2 {

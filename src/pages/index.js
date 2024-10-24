@@ -21,33 +21,76 @@ const IndexPage = () => {
     <React.Fragment>
       { /* NavBar */}
       <Layout pageTitle="Home Page">
-        <Banner>
-          <h1>Phil Cunliffe</h1>
-          <p className="description">takes notes on web-development, fatherhood, knowledge management, and digital minimalism</p>
-        </Banner>
+        <BannerSpacer>
+          <Banner>
+            <Name>Phil Cunliffe</Name>
+            <Description>takes notes on web-development, fatherhood, knowledge management, and digital minimalism</Description>
+            <Currently>Currently Front-End Engineering at Amazon</Currently>
+          </Banner>
+        </BannerSpacer>
         <GardenHeader>
-          <h2>Digital Garden</h2>
-          <p className='description'>Learn more about ditigal gardens from <a href=''>Maggie Appleton</a></p>
+          <GardenTitle>Essays &amp; Notes</GardenTitle>
+          <p className='description'>Learn more about ditigal gardens from <a href='https://maggieappleton.com/garden-history'>Maggie Appleton</a></p>
         </GardenHeader>
-        <NoteSection />
-        <HighlightSection />
+        <GardenSection>
+          <NoteSection />
+          <HighlightSection />
+        </GardenSection>
       </Layout>
       { /* Footer */}
     </React.Fragment>
   )
 }
 
-const Banner = styled.div`
-display: grid;
-grid-column-start: 1;
-grid-column-end: 12;
+const BannerSpacer = styled.div`
+min-height: 75vh;
+grid-column: 1 / 12;
 `
 
-const Garden = styled.div`
+const Name = styled.h1`
+font-family: "Londrina Shadow", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: var(--step-6);
+`;
+
+const Description = styled.p`
+margin-top: calc(-1 * var(--space-s));
+font-family: "Koh Santepheap", serif;
+font-weight: 400;
+font-style: normal;
+font-size: var(--step-2);
+`;
+
+const Currently = styled.p`
+padding-top: var(--space-m);
+font-family: "Quicksand", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+`;
+
+const Banner = styled.div`
+padding-top: var(--space-3xl);
+padding-bottom: var(--space-3xl);
+display: grid;
+max-width: 1000px;
+`
+
+const GardenSection = styled.div`
 display: grid;
 grid-column-start: 1;
 grid-column-end: 12;
+
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+  "notes notes highlights"
 `
+
+const GardenTitle = styled.h2`
+font-size: var(--step-3);
+`;
 
 const GardenHeader = styled.div`
 display: grid;

@@ -11,7 +11,7 @@ const Note = ({ title, stage, lastTended, tags }) => {
         <StageIcon size={'test'} stage={stage} />
       </IconContainer>
       <InfoContainer>
-        <h5>{title}</h5>
+        <NoteTitle>{title}</NoteTitle>
       </InfoContainer>
     </StyledNote>
   )
@@ -19,19 +19,29 @@ const Note = ({ title, stage, lastTended, tags }) => {
 
 const StyledNote = styled.div`
 display: flex;
-flex: 12rem 1 1;
+flex: calc(50% - (var(--space-m) / 2)) 0 1;
+justify-content: flex-start;
+
+cursor: pointer;
 `
 
 const IconContainer = styled.div`
 display: flex;
-flex: 30% 0;
-font-size: 3rem;
-align-items: center;
+flex: 0 0;
+font-size: var(--step-1);
+padding-top: var(--space-2xs);
 justify-content: center;
 `;
 
 const InfoContainer = styled.div`
-flex-grow: 1
+flex-grow: 1;
+padding: var(--space-2xs);
+`
+
+const NoteTitle = styled.p`
+height: 100%;
+text-overflow: ellipsis;
+overflow: hidden;
 `
 
 export default Note;
