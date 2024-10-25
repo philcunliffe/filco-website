@@ -29,15 +29,15 @@ export const GlobalStyle = createGlobalStyle`
   --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
 
   /* Typography */
-  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
-  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
-  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
-  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
-  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
-  --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
-  --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
-  --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
-  --step-6: clamp(3.3592rem, 2.8691rem + 2.4507vw, 4.7684rem);
+  --step--2: clamp(0.7813rem, 0.7469rem + 0.1717vw, 0.88rem);
+  --step--1: clamp(0.9375rem, 0.881rem + 0.2826vw, 1.1rem);
+  --step-0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
+  --step-1: clamp(1.35rem, 1.2217rem + 0.6413vw, 1.7188rem);
+  --step-2: clamp(1.62rem, 1.4362rem + 0.919vw, 2.1484rem);
+  --step-3: clamp(1.944rem, 1.6861rem + 1.2896vw, 2.6855rem);
+  --step-4: clamp(2.3328rem, 1.9766rem + 1.7811vw, 3.3569rem);
+  --step-5: clamp(2.7994rem, 2.3135rem + 2.4292vw, 4.1962rem);
+  --step-6: clamp(3.3592rem, 2.7032rem + 3.28vw, 5.2452rem);
 
   /* Grid */
   --grid-max-width: 77.50rem;
@@ -118,54 +118,94 @@ export const GlobalStyle = createGlobalStyle`
   gap: var(--grid-gutter);
 }
 
-/* Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
-	line-height: 1;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  /* scroll-behavior: smooth; */
 }
-ol, ul {
-	list-style: none;
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
-blockquote, q {
-	quotes: none;
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;	
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  }
+  html, body, #root {
+    height: 100%;
 }
+
+iframe {
+  max-width:100%;
+}
+
 body {
   background: var(--cream-stone);
   padding: var(--space-m);
-  color: var(--mud-brown-900);
+  color: var(--mud-brown-700);
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -182,11 +222,13 @@ h3, h4, h5, h6 {
 p, ul, ol {
   font-family: var(--font-body);
   font-size: var(--step-0);
+  font-weight: 300;
 }
 
 a {
   text-decoration: none;
-  color: var(--void-700);
+  color: var(--jade-900);
+  font-weight: bold;
 }
 
 h1 { font-size: var(--step-5); }
@@ -212,4 +254,4 @@ h5 { font-size: var(--step-1); }
 	text-transform: uppercase;
 	letter-spacing: 0.06rem;
 }
-`
+`;

@@ -37,7 +37,7 @@ const config = {
             remarkFrontmatter,
             remarkGfm,
             [remarkWikiLinkPlus, {
-              hrefTemplate: (permalink) => `/garden/${permalink}`,
+              hrefTemplate: (permalink) => `/garden/${slugify(permalink)}`,
               // markdownFolder: `${__dirname}/garden`,
             }],
             remarkObsidian,

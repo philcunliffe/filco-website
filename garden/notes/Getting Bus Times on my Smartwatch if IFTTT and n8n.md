@@ -3,9 +3,9 @@ planted: 2024-10-01
 stage: budding
 draft: false
 modified: 2024-10-14T17:22:11-07:00
-title: Getting Bus Times on my Smartwatch with IFTTT and n8n
+title: Getting Bus Times on my Smartwatch
 ---
-# Getting Bus Times on my Smartwatch with IFTTT and n8n
+# Getting Bus Times on my Smartwatch
 
 ## Why?
 
@@ -14,6 +14,8 @@ If ~~you've~~ looked at [[The Smartwatch is Not What You Think]] or [[Digital Mi
 ## Architecture
 
 ![Getting-Bus-Times-on-my-Smartwatch-if-IFTTT-and-n8n-2024-09-24-15.49.29.excalidraw](test.png)
+
+![[test.png]]
 
 I run a service called n8n on my [[Homelab]] which allows a user to easily build automations with a flowchart-like UI. n8n does not have any WearOS integration but IFTTT (which is a similar service found at IFTTT.com) does. IFTTT allows me to have a button which when pressed calls a webhook to activate the n8n flow.
 
