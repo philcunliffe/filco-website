@@ -50,6 +50,7 @@ const FlexBox = styled.div`
   align-items: flex-start;
   row-gap: var(--space-s);
   column-gap: var(--space-s);
+  padding-right: var(--space-s);
 `;
 
 export default NoteSection;

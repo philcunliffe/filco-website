@@ -1,17 +1,17 @@
-import remarkObsidian from '@thecae/remark-obsidian';
-import { dirname } from "path"
-import { fileURLToPath } from "url"
-import remarkGfm from "remark-gfm"
-import remarkFrontmatter from "remark-frontmatter"
-import remarkWikiLinkPlus from "remark-wiki-link-plus"
-import slugify from '@sindresorhus/slugify';
+import remarkObsidian from "@thecae/remark-obsidian";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import remarkGfm from "remark-gfm";
+import remarkFrontmatter from "remark-frontmatter";
+import remarkWikiLinkPlus from "remark-wiki-link-plus";
+import slugify from "@sindresorhus/slugify";
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const config = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My First Gatsby Site",
+    siteUrl: "https://www.philcunliffe.dev",
+    title: "Phil Cunliffe",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -19,7 +19,7 @@ const config = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: ['.mdx', '.md'],
+        extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [
           // `gatsby-remark-copy-linked-files`,
           {
@@ -36,10 +36,13 @@ const config = {
           remarkPlugins: [
             remarkFrontmatter,
             remarkGfm,
-            [remarkWikiLinkPlus, {
-              hrefTemplate: (permalink) => `/garden/${slugify(permalink)}`,
-              // markdownFolder: `${__dirname}/garden`,
-            }],
+            [
+              remarkWikiLinkPlus,
+              {
+                hrefTemplate: (permalink) => `/garden/${slugify(permalink)}`,
+                // markdownFolder: `${__dirname}/garden`,
+              },
+            ],
             remarkObsidian,
           ],
         },
@@ -51,14 +54,14 @@ const config = {
       options: {
         name: `notes`,
         path: `${__dirname}/garden/notes`,
-      }
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `highlights`,
         path: `${__dirname}/garden/highlights`,
-      }
+      },
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-styled-components",
@@ -67,7 +70,10 @@ const config = {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
         web: [
           {
             name: `Londrina Shadow`,
@@ -79,7 +85,7 @@ const config = {
           },
           {
             name: `Quicksand`,
-            file: `https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap`
+            file: `https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap`,
           },
         ],
       },

@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import NoteSection from "../components/note-section";
-import { useStaticQuery } from "gatsby";
+import { Link, useStaticQuery } from "gatsby";
 import HighlightSection from "../components/highlight-section";
 import styled from "styled-components";
 
@@ -19,11 +19,12 @@ const IndexPage = () => {
 
   return (
     <React.Fragment>
-      {/* NavBar */}
       <Layout pageTitle="Home Page">
         <BannerSpacer>
           <Banner>
-            <Name>Phil Cunliffe</Name>
+            <Name>
+              Phil Cunliffe<Link to="/about">?</Link>
+            </Name>
             <Description>
               takes notes on web-development, fatherhood, knowledge management,
               and digital minimalism
@@ -45,7 +46,6 @@ const IndexPage = () => {
           <HighlightSection />
         </GardenSection>
       </Layout>
-      {/* Footer */}
     </React.Fragment>
   );
 };
@@ -62,6 +62,19 @@ const Name = styled.h1`
   font-weight: 400;
   font-style: normal;
   font-size: var(--step-6);
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--step-0);
+    width: 1.2em;
+    height: 1.2em;
+    transform: translateY(calc(-1 * var(--step-3))) rotate(10deg);
+    border: 1px solid var(--jade-700);
+    border-width: 1px 2px 2px 1px;
+    border-radius: 0.5em 0.6em;
+  }
 `;
 
 const Description = styled.p`
@@ -78,7 +91,7 @@ const Currently = styled.p`
   margin: 0;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 `;
 
@@ -109,5 +122,5 @@ const GardenHeader = styled.div`
   grid-column-end: 12;
 `;
 
-export const Head = () => <Seo title="Home Page" />;
+export const Head = () => <Seo title="Home" />;
 export default IndexPage;
