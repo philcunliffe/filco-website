@@ -53,16 +53,17 @@ const config = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `notes`,
-        path: `${__dirname}/garden/notes`,
+        path: `${__dirname}/garden`,
+        ignore: [`**/\.*`, `**/templates`, `**/*.excalidraw.*`],
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `highlights`,
-        path: `${__dirname}/garden/highlights`,
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: `highlights`,
+    //     path: `${__dirname}/garden/highlights`,
+    //   },
+    // },
     "gatsby-transformer-sharp",
     "gatsby-plugin-styled-components",
     `gatsby-plugin-catch-links`,

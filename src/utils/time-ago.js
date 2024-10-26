@@ -1,4 +1,5 @@
 export function timeAgo(time) {
+  if (!time) return "";
   switch (typeof time) {
     case "number":
       break;

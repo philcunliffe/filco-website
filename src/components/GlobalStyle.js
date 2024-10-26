@@ -204,7 +204,6 @@ iframe {
 
 body {
   background: var(--cream-stone);
-  padding: var(--space-m);
   color: var(--mud-brown-700);
   min-height: 100vh;
   text-rendering: optimizeSpeed;

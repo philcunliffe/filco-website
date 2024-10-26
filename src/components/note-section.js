@@ -6,12 +6,17 @@ import styled from "styled-components";
 const NoteSection = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: { fields: { source: { eq: "notes" } } }) {
+      allMdx(
+        filter: {
+          frontmatter: { note_type: { eq: "note" }, publish: { eq: true } }
+        }
+        limit: 14
+      ) {
         nodes {
           frontmatter {
             title
-            stage
             planted
+            stage
             modified
           }
         }

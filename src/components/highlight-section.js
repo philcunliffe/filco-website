@@ -6,7 +6,7 @@ import styled from "styled-components";
 const HighlightSection = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: { fields: { source: { eq: "highlights" } } }) {
+      allMdx(filter: { frontmatter: { note_type: { eq: "highlights" } } }) {
         nodes {
           frontmatter {
             title
@@ -33,7 +33,6 @@ const HighlightSection = () => {
 };
 
 const StyledHighlightSection = styled.div`
-  display: grid;
   grid-area: highlights;
 
   h5 {
@@ -48,6 +47,7 @@ const FlexBox = styled.div`
   align-items: flex-start;
   row-gap: var(--space-s);
   column-gap: var(--space-s);
+  padding-top: var(--space-xs);
 `;
 
 export default HighlightSection;

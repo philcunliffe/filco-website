@@ -26,8 +26,8 @@ const IndexPage = () => {
               Phil Cunliffe<Link to="/about">?</Link>
             </Name>
             <Description>
-              takes notes on web-development, fatherhood, knowledge management,
-              and digital minimalism
+              takes notes on web-development, fatherhood,
+              <br /> and digital minimalism
             </Description>
             <Currently>Currently Front-End Engineering at Amazon</Currently>
           </Banner>
