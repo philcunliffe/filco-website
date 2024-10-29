@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My About Page.md",
+                "file": "Web Components are Unique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "My About Page"
+              "title": "Web Components are Unique"
             }
           }
         ],
@@ -182,10 +182,10 @@
   },
   "active": "7b8d48ef9fb94f4c",
   "lastOpenFiles": [
+    "My About Page.md",
     "highlights/articles/Web Components Are Okay.md",
     "highlights/books/Digital Minimalism.md",
     "Web Components are Unique.md",
-    "My About Page.md",
     "highlights/books/Skid Road.md",
     "On Digital Minimalism.md",
     "highlights/articles/The Clever Aiming Strategy Tour Pros Actually Use  the Game Plan  Golf Digest.md",

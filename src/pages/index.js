@@ -5,6 +5,7 @@ import NoteSection from "../components/note-section";
 import { Link, useStaticQuery } from "gatsby";
 import HighlightSection from "../components/highlight-section";
 import styled from "styled-components";
+import EssaysSection from "../components/essays-section";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -42,6 +43,7 @@ const IndexPage = () => {
           </p>
         </GardenHeader>
         <GardenSection>
+          <EssaysSection />
           <NoteSection />
           <HighlightSection />
         </GardenSection>

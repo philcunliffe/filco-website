@@ -1,9 +1,10 @@
 ---
 planted: 2024-10-27
 stage: budding
-publish: false
+publish: true
 title: Web Components are Unique
 note-type: essay
+modified: 2024-10-28T21:42:59-07:00
 ---
 # Web Components are Unique
 
