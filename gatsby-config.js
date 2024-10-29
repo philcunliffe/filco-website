@@ -54,7 +54,7 @@ const config = {
       options: {
         name: `notes`,
         path: `${__dirname}/garden`,
-        ignore: [`**/\.*`, `**/templates`, `**/*.excalidraw.*`],
+        ignore: [`**/\.*`, `**/templates`, `**/*.excalidraw.*`, `**/articles`],
       },
     },
     // {

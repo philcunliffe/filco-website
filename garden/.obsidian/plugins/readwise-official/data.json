@@ -1,0 +1,41 @@
+{
+  "token": "SeqlN9MFH1rVAwa4ReVdLGPtGuMeZ6JVVkIEBrufL01PLarljx",
+  "readwiseDir": "highlights",
+  "frequency": "0",
+  "triggerOnLoad": true,
+  "isSyncing": false,
+  "lastSyncFailed": false,
+  "lastSavedStatusID": 16833484,
+  "currentSyncStatusID": 0,
+  "refreshBooks": false,
+  "booksToRefresh": [
+    "45072505"
+  ],
+  "failedBooks": [],
+  "booksIDsMap": {
+    "highlights/books/Skid Road.md": "38181474",
+    "highlights/books/Return of the Lazy Dungeon Master.md": "38181472",
+    "highlights/articles/NEW React 19 Changes Are Amazing!.md": "38185556",
+    "highlights/articles/There’s a Fast New Code Editor in Town.md": "38189725",
+    "highlights/articles/Golden Butter Rice  Easy Perfect Rice  Food Wishes.md": "38189548",
+    "highlights/articles/The Clever Aiming Strategy Tour Pros Actually Use  the Game Plan  Golf Digest.md": "38640723",
+    "highlights/articles/Before You Write Frame Your Thoughts With Concept Modeling.md": "38641393",
+    "highlights/books/Light Bringer.md": "38764127",
+    "highlights/articles/The Hardest Part of D&D With ADHD.md": "39958049",
+    "highlights/books/Invisible Ink.md": "40298165",
+    "highlights/articles/7 Harsh Truths You Probably Need to Hear.md": "40856583",
+    "highlights/books/My Guide to RPG Storytelling.md": "40856433",
+    "highlights/books/From Dream to Dice.md": "40998742",
+    "highlights/articles/How to Repair a Drywall Ceiling Hole Fast and Easy!.md": "44887773",
+    "highlights/articles/A Brief History & Ethos of the Digital Garden.md": "44177470",
+    "highlights/articles/Learn in Public.md": "44898517",
+    "highlights/articles/The Expanding Dark Forest and Generative AI.md": "44998086",
+    "highlights/articles/Layers of Theme in Tabletop Games.md": "44953733",
+    "highlights/articles/The Dark Forest and the Cozy Web.md": "44998096",
+    "highlights/articles/A Big Little Idea Called Legibility.md": "44998109",
+    "highlights/articles/Web Components Are Okay.md": "45072503",
+    "highlights/articles/Ambient Co-Presence.md": "45093255",
+    "highlights/books/Digital Minimalism.md": "38357635"
+  },
+  "reimportShowConfirmation": true
+}

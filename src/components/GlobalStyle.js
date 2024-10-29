@@ -43,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
   --grid-max-width: 77.50rem;
   --grid-gutter: var(--space-s-l, clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem));
   --grid-columns: 12;
+  --grid-column-width: calc(100vw - (11 * var(--grid-gutter)) - (2 * var(--space-xl)) / 12 );
 
   /* Colors */
   /* Accents */

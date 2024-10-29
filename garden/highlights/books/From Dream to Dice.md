@@ -1,25 +1,17 @@
 ---
-note-type: highlights
+note-type: highlight
 medium: books
 author: Aron Christensen and Erica Lindquist
 reviewed: false
-draft: false
+publish: true
 title: From Dream to Dice
 cover_url: https://images-na.ssl-images-amazon.com/images/I/51m6KrcgyQL._SL200_.jpg
 ---
-
 # From Dream to Dice
 
 ![rw-book-cover](https://images-na.ssl-images-amazon.com/images/I/51m6KrcgyQL._SL200_.jpg)
 
-## Metadata
-
-- Author: [[Aron Christensen and Erica Lindquist]]
-- Full Title: From Dream to Dice
-- Category: #books
-
 ## Highlights
-
 - It’s not ([Location 92](https://readwise.io/to_kindle?action=open&asin=B07K3T2XB4&location=92))
 - a great idea to make your players memorize too many weird names, especially if they’re not important for the game – ([Location 92](https://readwise.io/to_kindle?action=open&asin=B07K3T2XB4&location=92))
 - It’s okay if it takes time for your game world to come together. That’s normal, I promise. But that’s also why it’s important to only build what you need – it’s already a time-consuming task to manufacture a setting and you can easily spend years on it without ever running a single game session. ([Location 380](https://readwise.io/to_kindle?action=open&asin=B07K3T2XB4&location=380))

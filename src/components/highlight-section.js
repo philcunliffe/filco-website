@@ -6,7 +6,14 @@ import styled from "styled-components";
 const HighlightSection = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: { frontmatter: { note_type: { eq: "highlights" } } }) {
+      allMdx(
+        filter: {
+          frontmatter: {
+            note_type: { eq: "highlight" }
+            medium: { eq: "books" }
+          }
+        }
+      ) {
         nodes {
           frontmatter {
             title

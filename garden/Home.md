@@ -12,7 +12,7 @@ This is an exercise in [[Learning in Public]]. My notes here have not been vette
 ## Where to start
 Below are some categories that have consumed my brain at some point:
 
-- [[Digital Minimalism]]
+- [[On Digital Minimalism]]
 	- [[Moving through the world with no smartphone]]
 	- [[The perfect no-smartphone load-out]]
 	- [[Building a Pi Zero powered media player]]

@@ -109,7 +109,9 @@ const GardenSection = styled.div`
 
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "notes notes highlights";
+  grid-template-areas:
+    "essays essays highlights"
+    "notes notes highlights";
 `;
 
 const GardenTitle = styled.h2`
