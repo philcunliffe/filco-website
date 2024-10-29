@@ -41,8 +41,8 @@ const NoteSection = () => {
 };
 
 const StyledNoteSection = styled.div`
-  grid-area: notes;
-
+  grid-column: 1 / 9;
+  grid-row: 4;
   h5 {
     margin: var(--space-xs) 0;
   }

@@ -16,14 +16,21 @@ const Highlight = ({ title, coverUrl }) => {
 };
 
 const StyledContainer = styled.div`
+  --section-width: calc(var(--grid-column-width) * 3 + var(--grid-gutter) * 2);
+  --cover-width: min(calc((var(--section-width) - var(--space-s)) / 2), 130px);
+  width: var(--cover-width);
+  height: min(calc(var(--cover-width) * 200 / 130), 200px);
+  background-size: 100% 100%;
+`;
+
+const StyledImage = styled.img`
+  --img-width: min(100%, 130px);
+
   cursor: pointer;
   max-width: 130px;
   max-height: 200px;
-  width: calc(50% - var(--space-s) / 2);
-  height: calc(
-    ((100vw - (2 * var(--space-xl))) / 6 - (var(--space-s) / 2)) * 200 / 130
-  );
-  background-size: 100% 100%;
+  width: var(--img-width);
+  height: max(calc(var(--img-width) * 200 / 130), 200px);
 `;
 
 export default Highlight;

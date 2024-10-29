@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import remarkGfm from "remark-gfm";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkWikiLinkPlus from "remark-wiki-link-plus";
+import remarkPrism from "remark-prism";
 import slugify from "@sindresorhus/slugify";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -21,7 +22,6 @@ const config = {
       options: {
         extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [
-          // `gatsby-remark-copy-linked-files`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -36,6 +36,7 @@ const config = {
           remarkPlugins: [
             remarkFrontmatter,
             remarkGfm,
+            remarkPrism,
             [
               remarkWikiLinkPlus,
               {
@@ -43,7 +44,6 @@ const config = {
                 // markdownFolder: `${__dirname}/garden`,
               },
             ],
-            remarkObsidian,
           ],
         },
       },

@@ -43,7 +43,8 @@ const EssaysSection = () => {
 };
 
 const StyledEssaysSection = styled.div`
-  grid-area: essays;
+  grid-column: 1 / 9;
+  grid-row: 3;
 
   h5 {
     margin: var(--space-xs) 0;

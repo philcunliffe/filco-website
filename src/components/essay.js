@@ -53,4 +53,5 @@ const Planted = styled.span`
 const Excerpt = styled.p`
   font-size: var(--step--1);
 `;
+
 export default Essay;

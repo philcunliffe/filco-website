@@ -38,12 +38,15 @@ export const GlobalStyle = createGlobalStyle`
   --step-4: clamp(2.3328rem, 1.9766rem + 1.7811vw, 3.3569rem);
   --step-5: clamp(2.7994rem, 2.3135rem + 2.4292vw, 4.1962rem);
   --step-6: clamp(3.3592rem, 2.7032rem + 3.28vw, 5.2452rem);
+  --step-7: clamp(4.0311rem, 3.36rem + 3.3555vw, 5.9605rem);
+  --step-8: clamp(4.8373rem, 3.9283rem + 4.5448vw, 7.4506rem);
 
   /* Grid */
   --grid-max-width: 77.50rem;
   --grid-gutter: var(--space-s-l, clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem));
   --grid-columns: 12;
-  --grid-column-width: calc(100vw - (11 * var(--grid-gutter)) - (2 * var(--space-xl)) / 12 );
+  --grid-width: calc(min(100vw, var(--grid-max-width)) - 2 * var(--space-xl));
+  --grid-column-width: calc((var(--grid-width) - (11 * var(--grid-gutter))) / 12 );
 
   /* Colors */
   /* Accents */
@@ -117,6 +120,7 @@ export const GlobalStyle = createGlobalStyle`
 .u-grid {
   display: grid;
   gap: var(--grid-gutter);
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
 }
 
 /* CSS Reset */

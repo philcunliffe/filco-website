@@ -7,7 +7,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <StyledLayout className="u-container u-grid">{children}</StyledLayout>
+      <StyledLayout className="u-container">{children}</StyledLayout>
       <Footer />
     </React.Fragment>
   );
@@ -15,6 +15,7 @@ const Layout = ({ pageTitle, children }) => {
 
 const StyledLayout = styled.main`
   padding: var(--space-l) var(--space-xl) var(--space-xl);
+  min-height: calc(100vh - 400px);
 `;
 
 export default Layout;

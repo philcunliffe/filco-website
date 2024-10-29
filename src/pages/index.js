@@ -21,40 +21,45 @@ const IndexPage = () => {
   return (
     <React.Fragment>
       <Layout pageTitle="Home Page">
-        <BannerSpacer>
-          <Banner>
-            <Name>
-              Phil Cunliffe<Link to="/about">?</Link>
-            </Name>
-            <Description>
-              takes notes on web-development, fatherhood,
-              <br /> and digital minimalism
-            </Description>
-            <Currently>Currently Front-End Engineering at Amazon</Currently>
-          </Banner>
-        </BannerSpacer>
-        <GardenHeader>
-          <GardenTitle>Essays &amp; Notes</GardenTitle>
-          <p className="description">
-            Learn more about ditigal gardens from{" "}
-            <a href="https://maggieappleton.com/garden-history">
-              Maggie Appleton
-            </a>
-          </p>
-        </GardenHeader>
-        <GardenSection>
+        <HomePageGrid className={`u-grid`}>
+          <BannerSpacer>
+            <Banner>
+              <Name>
+                Phil Cunliffe<Link to="/about">?</Link>
+              </Name>
+              <Description>
+                takes notes on web-development, fatherhood, and digital
+                minimalism
+              </Description>
+              <Currently>Currently Front-End Engineering at Amazon</Currently>
+            </Banner>
+          </BannerSpacer>
+          <GardenHeader>
+            <GardenTitle>Essays &amp; Notes</GardenTitle>
+            <p className="description">
+              Learn more about ditigal gardens from{" "}
+              <a href="https://maggieappleton.com/garden-history">
+                Maggie Appleton
+              </a>
+            </p>
+          </GardenHeader>
+          {/* <GardenSection> */}
           <EssaysSection />
           <NoteSection />
           <HighlightSection />
-        </GardenSection>
+          {/* </GardenSection> */}
+        </HomePageGrid>
       </Layout>
     </React.Fragment>
   );
 };
 
+const HomePageGrid = styled.div``;
+
 const BannerSpacer = styled.div`
   min-height: 73vh;
-  grid-column: 1 / 12;
+  grid-column: 1 / 13;
+  grid-row: 1;
 `;
 
 const Name = styled.h1`
@@ -63,18 +68,18 @@ const Name = styled.h1`
   font-family: "Londrina Shadow", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: var(--step-6);
+  font-size: var(--step-8);
 
   a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--step-0);
+    font-size: var(--step-2);
     width: 1.2em;
     height: 1.2em;
-    transform: translateY(calc(-1 * var(--step-3))) rotate(10deg);
+    transform: translateY(calc(-1 * var(--step-5))) rotate(10deg);
     border: 1px solid var(--jade-700);
-    border-width: 1px 2px 2px 1px;
+    border-width: 1px 3px 2px 1px;
     border-radius: 0.5em 0.6em;
   }
 `;
@@ -104,17 +109,15 @@ const Banner = styled.div`
   max-width: 1000px;
 `;
 
-const GardenSection = styled.div`
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 12;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "essays essays highlights"
-    "notes notes highlights";
-`;
+// const GardenSection = styled.div`
+//   display: grid;
+//   grid-column: 2 / 12;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-template-rows: auto;
+//   grid-template-areas:
+//     "essays essays highlights"
+//     "notes notes highlights";
+// `;
 
 const GardenTitle = styled.h2`
   font-size: var(--step-3);
@@ -122,8 +125,8 @@ const GardenTitle = styled.h2`
 
 const GardenHeader = styled.div`
   display: grid;
-  grid-column-start: 1;
-  grid-column-end: 12;
+  grid-column: 1 / 13;
+  grid-row: 2;
 `;
 
 export const Head = () => <Seo title="Home" />;

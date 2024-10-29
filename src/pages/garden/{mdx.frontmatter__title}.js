@@ -15,8 +15,10 @@ const BlogPost = ({ data, children }) => {
 };
 
 const ReadingLayout = styled.div`
+  grid-column: 2 / 12;
   display: grid;
   grid-template-columns: 1fr min(72ch, 100%) 1fr;
+  padding-top: 20vh;
   font-size: var(--step-0);
 `;
 
@@ -25,14 +27,7 @@ const LimitedWidth = styled.div`
 
   h1 {
     font-weight: 900;
-  }
-
-  h1::after {
-    display: inline-block;
-    content: "";
-    border-top: 0.3rem solid var(--mud-brown-700);
-    width: 100%;
-    transform: translateY(-1rem);
+    font-size: var(--step-3);
   }
 
   h1,
@@ -40,11 +35,27 @@ const LimitedWidth = styled.div`
     letter-spacing: -1px;
   }
 
+  h4 {
+    font-weight: 300;
+  }
+
+  hr {
+    margin: var(--space-xl) 0;
+  }
+
   p {
     line-height: 200%;
     letter-spacing: 0.3px;
     font-weight: 400;
     margin: var(--space-m) 0;
+  }
+
+  p:first-of-type::first-letter {
+    font-size: 5.2rem;
+    font-weight: 600;
+    float: left;
+    margin: 0.4rem 0.5rem 0 0;
+    line-height: 0.9;
   }
 `;
 

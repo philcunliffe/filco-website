@@ -40,8 +40,8 @@ const HighlightSection = () => {
 };
 
 const StyledHighlightSection = styled.div`
-  grid-area: highlights;
-
+  grid-column: 9 / 13;
+  grid-row: 3 / 5;
   h5 {
     margin: var(--space-xs) 0;
   }
