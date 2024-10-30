@@ -1,10 +1,8 @@
-import remarkObsidian from "@thecae/remark-obsidian";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import remarkGfm from "remark-gfm";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkWikiLinkPlus from "remark-wiki-link-plus";
-import remarkPrism from "remark-prism";
 import remarkTorchlight from "remark-torchlight";
 import remarkHtml from "remark-html";
 import slugify from "@sindresorhus/slugify";
@@ -19,6 +17,12 @@ const config = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "assets/icon.png",
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

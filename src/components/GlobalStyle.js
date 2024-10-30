@@ -109,7 +109,9 @@ export const GlobalStyle = createGlobalStyle`
 
   --font-serif: "Koh Santepheap", serif;
   --font-sans: "Quicksand", sans-serif;
-  --font-body: "Koh Santepheap", serif; 
+  --font-body: "Koh Santepheap", serif;
+  
+  --footer-height: 100px;
 }
 
 .u-container {

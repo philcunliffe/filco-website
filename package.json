@@ -1,9 +1,9 @@
 {
-  "name": "my-first-gatsby-site",
+  "name": "philcunliffe.dev",
   "version": "1.0.0",
   "private": true,
-  "description": "My First Gatsby Site",
-  "author": "Megan Sullivan",
+  "description": "Phil Cunliffe's personal website",
+  "author": "Phil Cunliffe",
   "keywords": [
     "gatsby"
   ],
@@ -24,6 +24,7 @@
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-catch-links": "^5.13.1",
     "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-mdx-source-name": "^1.0.1",
     "gatsby-plugin-sharp": "^5.0.0",

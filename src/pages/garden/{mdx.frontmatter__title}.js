@@ -3,13 +3,14 @@ import { graphql } from "gatsby";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import styled from "styled-components";
-// import { Script } from "gatsby";
+// import BackButton from "../../components/back-button";
+// import { navigate } from "gatsby";
 
 const BlogPost = ({ data, children }) => {
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
-      {/* <Script src={"/prism.js"} /> */}
+    <Layout pageTitle={data.mdx.frontmatter.title} showHeader={true}>
       <ReadingLayout>
+        {/* <StyledBackButton onClick={() => navigate("/")} /> */}
         <LimitedWidth>{children}</LimitedWidth>
       </ReadingLayout>
     </Layout>
@@ -20,9 +21,17 @@ const ReadingLayout = styled.div`
   grid-column: 2 / 12;
   display: grid;
   grid-template-columns: 1fr min(72ch, 100%) 1fr;
-  padding-top: 20vh;
+  padding-top: 5vh; 
   font-size: var(--step-0);
 `;
+
+// const StyledBackButton = styled(BackButton)`
+//   grid-column: 1;
+//   height: var(--step-3);
+//   justify-self: end;
+//   margin: var(--space-2xs) var(--space-2xs) 0 0;
+//   cursor: pointer;
+// `;
 
 const LimitedWidth = styled.div`
   grid-column: 2;

@@ -23,7 +23,6 @@ const Essay = ({ title, planted, modified, excerpt, stage }) => {
 const StyledNote = styled.div`
   display: flex;
   justify-content: flex-start;
-
   cursor: pointer;
 `;
 
