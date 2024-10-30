@@ -5,6 +5,8 @@ import remarkGfm from "remark-gfm";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkWikiLinkPlus from "remark-wiki-link-plus";
 import remarkPrism from "remark-prism";
+import remarkTorchlight from "remark-torchlight";
+import remarkHtml from "remark-html";
 import slugify from "@sindresorhus/slugify";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -36,7 +38,16 @@ const config = {
           remarkPlugins: [
             remarkFrontmatter,
             remarkGfm,
-            remarkPrism,
+            remarkHtml,
+            [
+              remarkTorchlight,
+              {
+                config: {
+                  token: process.env.TORCHLIGHT_TOKEN,
+                  theme: "one-dark-pro",
+                },
+              },
+            ],
             [
               remarkWikiLinkPlus,
               {

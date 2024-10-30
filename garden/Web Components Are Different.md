@@ -4,7 +4,7 @@ stage: budding
 publish: true
 title: Web Components are Unique
 note-type: essay
-modified: 2024-10-29T15:46:17-07:00
+modified: 2024-10-29T21:20:11-07:00
 ---
 # Web Components Are Different
 
@@ -16,7 +16,6 @@ Web components are back on the hot seat. Popular development blogger Ryan Carnia
 
 Before you comment, yes, I'm aware that the best and easiest way to write web components is by using compiled frameworks like Lit and Stencil, but that's not what I mean when I say they are "uncompiled." I mean that applications built using web components can be composed and configured in an uncompiled HTML file and so are *composable at runtime*.
 ## Composability at Runtime
-TODO: This needs to be more clear about how web-components collection of pieces is different than a react component library because it's done after compilation
 
 This metaphor may be a bit stretched, but bear with me: imagine buying a Lego pirate ship. It's meticulously designed to come together as a cohesive whole. Each small piece, like cannons, is custom-fabricated to contribute to the final product. This is how I view compiled frameworks. While you might be able to reuse those cannons from a medieval battle set, they will always be part of a "compiled" product (or application) when sold.
 
@@ -26,18 +25,19 @@ Applications made from web components can be easily composed in a simple HTML fi
 ## Prove it
 
 Let's check out an example, [here](https://codepen.io/sagemaker_crowd_html_elements/pen/XWpJGad) is a Codepen of a full image annotation application built with a framework I helped create called [Crowd HTML Elements](https://blog.mturk.com/mturk-introduces-crowd-html-elements-a-library-of-easy-to-use-task-interfaces-for-bounding-box-35bb9c860069). There is no JavaScript or CSS in the Codepen, just an HTML file which looks like this:
+
 ```html
 <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
 
 <crowd-form>
   <crowd-bounding-box
-    name="annotatedResult"
+	name="annotatedResult"
     src="{{ImageUrl}}"
     header="Draw bounding boxes around all the cats and dogs in this image"
     labels="['Fish', 'Coral', 'Turtle']"
   >
     <full-instructions header="Bounding Box Instructions" >
-      <p>Use the bounding box tool to draw boxes around the requested target of interest:</p>
+      <p>Use the bounding box tool to draw boxes</p>
       <ol>
         <li>More instructions go here</li>
       </ol>

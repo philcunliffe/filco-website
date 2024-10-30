@@ -3,10 +3,12 @@ import { graphql } from "gatsby";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import styled from "styled-components";
+// import { Script } from "gatsby";
 
 const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
+      {/* <Script src={"/prism.js"} /> */}
       <ReadingLayout>
         <LimitedWidth>{children}</LimitedWidth>
       </ReadingLayout>
@@ -28,6 +30,10 @@ const LimitedWidth = styled.div`
   h1 {
     font-weight: 900;
     font-size: var(--step-3);
+  }
+
+  h2 {
+    font-size: var(--step-2);
   }
 
   h1,

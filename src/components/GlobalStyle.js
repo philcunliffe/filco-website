@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-@import "@thecae/remark-obsidian/obsidian.module.css";
+/* @import url('/prism.css'); */
+/* @import "@thecae/remark-obsidian/obsidian.module.css"; */
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
@@ -257,5 +258,53 @@ h5 { font-size: var(--step-1); }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.06rem;
+}
+
+code {
+  font-size: var(--step--2) !important;
+}
+
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+pre {
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+}
+ 
+/*
+ Add some vertical padding and expand the width
+ to fill its container. The horizontal padding
+ comes at the line level so that background
+ colors extend edge to edge.
+*/
+pre.torchlight code {
+    display: block;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+ 
+/*
+ Horizontal line padding to match the vertical
+ padding from the code block above.
+*/
+pre.torchlight code .line {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+ 
+/*
+ Push the code away from the line numbers and
+ summary caret indicators.
+*/
+pre.torchlight code .line-number,
+pre.torchlight code .summary-caret {
+    margin-right: 1rem;
 }
 `;
