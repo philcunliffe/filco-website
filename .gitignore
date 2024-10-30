@@ -3,3 +3,6 @@ node_modules/
 public/
 garden2/
 .env
+.DS_Store
+**/.DS_Store
+garden/.obsidian/

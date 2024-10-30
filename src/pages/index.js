@@ -6,6 +6,7 @@ import { Link, useStaticQuery } from "gatsby";
 import HighlightSection from "../components/highlight-section";
 import styled from "styled-components";
 import EssaysSection from "../components/essays-section";
+import { graphql } from "gatsby";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
