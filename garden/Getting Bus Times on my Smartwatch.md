@@ -4,6 +4,7 @@ stage: budding
 publish: true
 title: Getting Bus Times on my Smartwatch
 note-type: note
+modified: 2024-10-30T18:57:22-07:00
 ---
 # Getting Bus Times on my Smartwatch
 
