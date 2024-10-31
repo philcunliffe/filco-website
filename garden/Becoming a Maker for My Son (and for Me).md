@@ -6,8 +6,11 @@ stage: evergreen
 publish: true
 title: Becoming a Maker for My Son (and for Me)
 note-type: note
+modified: 2024-10-30T18:05:32-07:00
 ---
 # Becoming a Maker for My Son (and for Me)
+
+---
 
 Every day, I watch my son grow into a more nuanced individual. He’s constantly looking at me to help him define himself. Each mimicry or parody he presents back to me brings me great joy and a sense of responsibility. My role makes me the prototype and whenever I think about that I feel an undeniable urge to create an idealized version of myself—someone he can look up to, someone he can use as a template.
 
