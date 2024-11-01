@@ -4,7 +4,7 @@ stage: budding
 publish: true
 title: Web Components are Important
 note-type: essay
-modified: 2024-11-01T14:11:08-07:00
+modified: 2024-11-01T15:56:45-07:00
 ---
 # Web Components Are Important
 
@@ -81,7 +81,7 @@ This hypothetical HTML file integrates components made by five developers, inclu
 
 Most developers think about web applications through the lens of compiled frameworks like React. Packages and components are imported, woven together, and then distributed as a complete application. There's little reason to bother with Web Components in this paradigm when framework native component libraries are available. This view is one-dimensional and ignores the most compelling aspects of Web Components. 
 
-The internet is for everyone. It's ever-expanding, everlasting, and ever backward-compatible. It needs a specification so people who care can extend the foundational HTML it's built on. That specification is Web Components. Building cool things on the web should be for more than just companies and developers; we need to lower that bar, or the internet may become a [lifeless husk](https://maggieappleton.com/ai-dark-forest).
+The internet is for everyone. It's ever-expanding, everlasting, and ever backward-compatible. It needs a specification so people who care can extend the foundational HTML it's built on. That specification is Web Components. For us developers, a wider HTML foundation means we can build complex applications more quickly using proven pre-fabricated pieces. For everyone else, building cool things on the web should be for more than just companies and developers; we need to lower that bar, or the internet may become a [lifeless husk](https://maggieappleton.com/ai-dark-forest).
 
 
 

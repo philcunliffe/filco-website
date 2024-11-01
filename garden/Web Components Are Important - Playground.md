@@ -2,11 +2,13 @@
 planted: 2024-11-01
 stage: seedling
 publish: false
-title: Web Components Are Different - Playground
+title: Web Components Are Important - Playground
 note-type: note
-modified: 2024-11-01T12:07:42-07:00
+modified: 2024-11-01T14:52:49-07:00
+tags:
+  - playground
 ---
-# Web Components Are Different - Playground
+# Web Components Are Important - Playground
 
 I want to talk about a feature of web components that I have never seen mentioned and is what I believe sets them apart from compiled frameworks, and that's their *uncompiled* nature.
 
