@@ -39,7 +39,10 @@ const Seo = ({ title, description, image, siteUrl }) => {
         property="og:description"
         content={description || data.site.siteMetadata.description}
       />
-      <meta property="og:image" content={image || data.site.image} />
+      <meta
+        property="og:image"
+        content={image || data.site.siteMetadata.image}
+      />
 
       <meta property="twitter:card" content="summary" />
       <meta
@@ -54,7 +57,10 @@ const Seo = ({ title, description, image, siteUrl }) => {
         property="twitter:description"
         content={description || data.site.siteMetadata.description}
       />
-      <meta property="twitter:image" content={image || data.site.image} />
+      <meta
+        property="twitter:image"
+        content={image || data.site.siteMetadata.image}
+      />
     </>
   );
 };

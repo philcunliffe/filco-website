@@ -14,7 +14,7 @@ const config = {
     siteUrl: "https://www.philcunliffe.dev",
     title: "Phil Cunliffe",
     description: "Phillip Cunliffe's Digital Garden",
-    image: "https://www.philcunliffe.dev/icons/icon-512x512.png",
+    image: "/icons/icon-512x512.png",
     twitterUsername: "@philcunliffe",
   },
   plugins: [
