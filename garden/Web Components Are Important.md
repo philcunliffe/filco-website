@@ -4,7 +4,7 @@ stage: budding
 publish: true
 title: Web Components are Important
 note-type: essay
-modified: 2024-11-01T13:34:30-07:00
+modified: 2024-11-01T13:46:33-07:00
 ---
 # Web Components Are Important
 
@@ -74,12 +74,12 @@ The previous "bounding box" example is quite basic compared to what is possible.
 
 In this dream, a `<open-app-layout>` component provides a configurable, responsive layout. Slotted into the layout is a `<editor-core>` component that encapsulates a `<canvas>` and provides loading/saving functionality and an interface for tools to connect. Finally, we have three chosen toolsets, `<painting-tools>` and `<hue-sat-tools>` from external developers, and `<my-custom-gradient-tool>,` which is something we have built ourselves to add functionality.
 
-This hypothetical HTML file integrates components made by five developers, including ourselves. These components could have been built years apart using different frameworks or versions and work together seamlessly forever.
+This hypothetical HTML file integrates components made by five developers, including ourselves, into a fully functional image editor. These components could have been built years apart using different frameworks or versions and work together seamlessly forever.
 ## Conclusion
 
 Most developers think about web applications through the lens of compiled frameworks like React. Packages and components are imported, woven together, and then distributed as a complete application. There's little reason to bother with Web Components in this paradigm when framework native component libraries are available. This view is one-dimensional and ignores the most compelling aspects of Web Components. 
 
-The internet is for everyone. It's ever-expanding, everlasting, and ever backward-compatible. It needs a specification so people who care can expand the foundational HTML it's built on. That specification is Web Components. Building cool things on the web should be for more than just companies and developers; we need to lower that bar, or the internet may become a [lifeless husk](https://maggieappleton.com/ai-dark-forest).
+The internet is for everyone. It's ever-expanding, everlasting, and ever backward-compatible. It needs a specification so people who care can extend the foundational HTML it's built on. That specification is Web Components. Building cool things on the web should be for more than just companies and developers; we need to lower that bar, or the internet may become a [lifeless husk](https://maggieappleton.com/ai-dark-forest).
 
 
 
