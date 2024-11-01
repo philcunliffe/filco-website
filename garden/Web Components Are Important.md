@@ -4,11 +4,11 @@ stage: budding
 publish: true
 title: Web Components are Important
 note-type: essay
-modified: 2024-11-01T13:46:33-07:00
+modified: 2024-11-01T14:11:08-07:00
 ---
 # Web Components Are Important
 
-#### *Not better or worse, just different*
+#### *Expanding the Foundation of the Web*
 
 ---
 
@@ -45,6 +45,8 @@ At Amazon, I helped create a collection of Web Components called [Crowd HTML Ele
   </crowd-bounding-box>
 </crowd-form>  
 ```
+Which renders an entire application that looks like this:
+![Crowd-bounding-box application](./pasted-image-20241101135839.png)
 
 The `<canvas>` element is one of the most complicated HTML elements. The `<crowd-bounding-box>` encapsulates this complexity and surfaces an application that is dead simple to configure for anyone. 
 
