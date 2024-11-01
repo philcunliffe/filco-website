@@ -21,7 +21,7 @@ const ReadingLayout = styled.div`
   grid-column: 2 / 12;
   display: grid;
   grid-template-columns: 1fr min(72ch, 100%) 1fr;
-  padding-top: 5vh; 
+  padding-top: 5vh;
   font-size: var(--step-0);
 `;
 

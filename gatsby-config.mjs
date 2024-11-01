@@ -13,6 +13,9 @@ const config = {
   siteMetadata: {
     siteUrl: "https://www.philcunliffe.dev",
     title: "Phil Cunliffe",
+    description: "Phillip Cunliffe's Digital Garden",
+    image: "/icons/icon-512x512.png",
+    twitterUsername: "@philcunliffe",
   },
   plugins: [
     "gatsby-plugin-image",
