@@ -29,7 +29,7 @@ const Seo = ({ title, description, image, siteUrl }) => {
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
-        content={`${data.site.siteMetadata.siteUrl}/${siteUrl}`}
+        content={`${data.site.siteMetadata.siteUrl}/${siteUrl ? siteUrl : ""}`}
       />
       <meta
         property="og:title"
@@ -44,7 +44,7 @@ const Seo = ({ title, description, image, siteUrl }) => {
       <meta property="twitter:card" content="summary" />
       <meta
         property="twitter:url"
-        content={`${data.site.siteMetadata.siteUrl}/${siteUrl}`}
+        content={`${data.site.siteMetadata.siteUrl}/${siteUrl ? siteUrl : ""}`}
       />
       <meta
         property="twitter:title"
