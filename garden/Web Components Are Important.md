@@ -4,7 +4,7 @@ stage: budding
 publish: true
 title: Web Components are Important
 note-type: essay
-modified: 2024-11-01T22:00:55-07:00
+modified: 2024-11-01T22:06:31-07:00
 ---
 # Web Components Are Important
 
@@ -15,7 +15,7 @@ modified: 2024-11-01T22:00:55-07:00
 Web components are back on the hot seat. Ryan Carniato set the space on fire with his post [Web Components are Not the Future](https://dev.to/ryansolid/maybe-web-components-are-not-the-future-hfh), and the subsequent discussion has been spicy. I'm not going to counter or analyze the points he makes in that article, Nolan Lawson does that better than I could in his response, [Web Components Are Okay](https://nolanlawson.com/2024/09/28/web-components-are-okay/). Instead, I will expand upon Nolan's points in his excellent post, [Use Web Components For What They're Good At](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/) to show that Web Components are critical to the future of the web.
 ## Why Do I Need a Framework to Build a Web Page?
 
-In 1996, I built a Dragonball Z fan page in plain old HTML when I was 7. I wrote it using Notepad in a single file. In high school and college, I built more interesting sites with CSS and jQuery, all in a simple folder. The web had evolved but still made intuitive sense to me. Then I graduated and got a job doing KnockoutJS and Angular, and it was as if I'd jumped from arithmetic to calculus. Node? NPM? Package versions? Bundlers? Compilers? I needed exponentially more knowledge than ever just to run the website.
+In 1996, I was 7 years old, and I built a Dragonball Z fan page in plain old HTML. I wrote it using Notepad in a single file. In high school and college, I built more interesting sites with CSS and jQuery, all in a simple folder. The web had evolved but still made intuitive sense to me. Then I graduated and got a job doing KnockoutJS and Angular, and it was as if I'd jumped from arithmetic to calculus. Node? NPM? Package versions? Bundlers? Compilers? I needed exponentially more knowledge than ever just to run the website.
 
 Web Components offer developers the opportunity to develop for the web itself and extend HTML to bring new and complex functionality into tags that a 7-year-old could understand and use.
 ## Prove it
@@ -48,7 +48,7 @@ At Amazon, I helped create a collection of Web Components called [Crowd HTML Ele
 Which renders an entire application that looks like this:
 ![Crowd-bounding-box application](./pasted-image-20241101135839.png)
 
-The `<canvas>` element is one of the most complicated HTML elements. The `<crowd-bounding-box>` encapsulates this complexity and surfaces an application that is dead simple to configure for anyone. 
+The `<crowd-bounding-box>` component encapsulates the complexity of working with a `<canvas>` element and surfaces an application that is dead simple to configure for anyone. 
 
 Components like this are also hackable with minimal coding knowledge. [This link](https://github.com/aws-samples/amazon-sagemaker-ground-truth-task-uis/blob/master/images/bounding-box-custom-labels.liquid.html) demonstrates how a user could enhance `<crowd-bounding-box>` to let end-users dynamically add and edit labels. This creation and hacking requires no node or NPM, bundlers, compilers, or transpilers, just a `<script>` tag. A similar modification to a React component is challenging in comparison.
 

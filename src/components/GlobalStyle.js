@@ -263,8 +263,13 @@ h5 { font-size: var(--step-1); }
 }
 
 code {
-  font-size: var(--step--2) !important;
+  font-size: var(--step--2);
 }
+
+p > code {
+  font-size: var(--step--1);
+}
+
 
 /*
  Margin and rounding are personal preferences,
@@ -309,4 +314,5 @@ pre.torchlight code .line-number,
 pre.torchlight code .summary-caret {
     margin-right: 1rem;
 }
+
 `;
