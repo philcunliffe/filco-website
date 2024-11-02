@@ -4,7 +4,7 @@ stage: budding
 publish: true
 title: Web Components are Important
 note-type: essay
-modified: 2024-11-01T15:56:45-07:00
+modified: 2024-11-01T22:00:55-07:00
 ---
 # Web Components Are Important
 
@@ -74,7 +74,7 @@ The previous "bounding box" example is quite basic compared to what is possible.
 </open-app-layout>
 ```
 
-In this dream, a `<open-app-layout>` component provides a configurable, responsive layout. Slotted into the layout is a `<editor-core>` component that encapsulates a `<canvas>` and provides loading/saving functionality and an interface for tools to connect. Finally, we have three chosen toolsets, `<painting-tools>` and `<hue-sat-tools>` from external developers, and `<my-custom-gradient-tool>,` which is something we have built ourselves to add functionality.
+In this dream, a `<open-app-layout>` component provides a configurable, responsive layout. Slotted into the layout is a `<editor-core>` component that encapsulates a `<canvas>`, provides loading/saving functionality, and surfaces an interface for tools to connect. Finally, we have three chosen toolsets, `<painting-tools>` and `<hue-sat-tools>` from external developers, and `<my-custom-gradient-tool>,` which is something we have built ourselves to add functionality.
 
 This hypothetical HTML file integrates components made by five developers, including ourselves, into a fully functional image editor. These components could have been built years apart using different frameworks or versions and work together seamlessly forever.
 ## Conclusion
