@@ -28,8 +28,9 @@ const HighlightSection = () => {
     <StyledHighlightSection>
       <h5>Highlights</h5>
       <FlexBox>
-        {data.allMdx.nodes.map((node) => (
+        {data.allMdx.nodes.map((node, index) => (
           <Highlight
+            key={`highlight-${index}`}
             title={node.frontmatter.title}
             coverUrl={node.frontmatter.cover_url}
           />

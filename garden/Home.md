@@ -17,7 +17,7 @@ Below are some categories that have consumed my brain at some point:
 	- [[The perfect no-smartphone load-out]]
 	- [[Building a Pi Zero powered media player]]
 	- [[Getting Bus Times on my Smartwatch]]
-	- [[The Smartwatch is Not What You Think]]
+	- [[The Smartwatch as a dumb phone]]
 - [[Self-Hosting]]
 	- [[Homelab]]
 	- [[Youtube without Youtube]]

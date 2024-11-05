@@ -15,7 +15,7 @@ The hooks of the internet and constant notification spam are particularly danger
 2. Replace these feeds with intentional media consumption
 3. Minimize the effects of digital minimalism on my social life as much as possible
 ## Topics
-- [[The Smartwatch is Not What You Think]]
+- [[The Smartwatch as a dumb phone]]
 - [[The perfect no-smartphone load-out]]
 - [[Minimizing distraction while at the computer]]
 - [[Hacking my brain with my EDC]]

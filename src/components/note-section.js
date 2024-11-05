@@ -28,8 +28,9 @@ const NoteSection = () => {
     <StyledNoteSection>
       <h5>Notes</h5>
       <FlexBox>
-        {data.allMdx.nodes.map((node) => (
+        {data.allMdx.nodes.map((node, index) => (
           <Note
+            key={`note-${index}`}
             title={node.frontmatter.title}
             stage={node.frontmatter.stage}
             planted={node.frontmatter.planted}

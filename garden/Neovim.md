@@ -7,6 +7,7 @@ stage: budding
 publish: true
 title: Neovim
 note-type: note
+modified: 2024-11-04T16:16:02-08:00
 ---
 # Neovim
 

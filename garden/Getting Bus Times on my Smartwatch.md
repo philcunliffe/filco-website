@@ -10,7 +10,7 @@ modified: 2024-10-30T18:57:22-07:00
 
 ---
 
-If you've looked at [[The Smartwatch is Not What You Think]] or [[On Digital Minimalism]] you know that I'm constantly looking for ways to reduce my dependence on my smartphone. One small reason I still pull it out of my locked server rack is to look at bus times on the OneBusAway app. Inevitably this interaction can lead to more undesirable interactions and so I'm looking to eliminate it. Unfortunately, there is no OneBusAway app for WearOS but I'm sure I can solve this problem with a little code and my [[Homelab]].
+If you've looked at [[The Smartwatch as a dumb phone]] or [[On Digital Minimalism]] you know that I'm constantly looking for ways to reduce my dependence on my smartphone. One small reason I still pull it out of my locked server rack is to look at bus times on the OneBusAway app. Inevitably this interaction can lead to more undesirable interactions and so I'm looking to eliminate it. Unfortunately, there is no OneBusAway app for WearOS but I'm sure I can solve this problem with a little code and my [[Homelab]].
 
 ## Architecture
 ![[bus-times-architecture.excalidraw.png]]

@@ -29,8 +29,9 @@ const EssaysSection = () => {
     <StyledEssaysSection>
       <h5>Essays</h5>
       <FlexBox>
-        {data.allMdx.nodes.map((node) => (
+        {data.allMdx.nodes.map((node, index) => (
           <Essay
+            key={`essay-${index}`}
             title={node.frontmatter.title}
             stage={node.frontmatter.stage}
             planted={node.frontmatter.planted}
