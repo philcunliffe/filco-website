@@ -4,7 +4,7 @@ stage: seedling
 publish: true
 title: Oh Crap! I Have a Toddler In A Nutshell
 note-type: note
-modified: 2025-05-05T14:22:33-07:00
+modified: 2025-05-05T14:32:10-07:00
 aliases:
   - Oh Crap! I Have a Toddler review
 ---
@@ -29,4 +29,4 @@ Much like filling a toddler's bucket can be easy, emptying it is equally easy. O
 
 Correcting a connection deficit with a toddler doesn't have an immediate fix. You must consistently connect with the toddler for them to trust that connection time is no longer scarce. At first, they'll likely hold on to moments of connection for dear life as they are used to a life of connection scarcity. Toddlers thrive with routine, so implementing a scheduled block like reading time can work wonders.
 
-The idea of this connection seems intimidating, and let's be honest, boring. But you'll find (and I do) that these concise bursts of connection will fill your emotional bucket as well. So, on top of having a great behavioral ROI, it will actually make you feel like a great parent and bring your family closer together.
+The idea of this dedicated connection time seems intimidating, and let's be honest, a little boring. But you'll find (and I do) that these concise bursts of engagement will also fill your emotional bucket. So, on top of having a great behavioral ROI, it will actually make you feel like a great parent and bring your family closer together.
