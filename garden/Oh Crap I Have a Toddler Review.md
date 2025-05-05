@@ -2,12 +2,15 @@
 planted: 2025-05-05
 stage: seedling
 publish: true
-title: Oh Crap! I Have a Toddler review
+title: Oh Crap! I Have a Toddler In A Nutshell
 note-type: note
-modified: 2025-05-05T12:25:16-07:00
+modified: 2025-05-05T14:22:33-07:00
+aliases:
+  - Oh Crap! I Have a Toddler review
 ---
-# Oh Crap! I Have a Toddler Review
+# Oh Crap! I Have a Toddler: In A Nutshell
 ---
+This page is not complete and is in-progress
 ## Why did I read it?
 
 Because I have a toddler and it's freaking hard. This is definitely my most highlighted book of all time so this review will also likely be quite lengthy.

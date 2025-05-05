@@ -4,7 +4,10 @@ medium: books
 author: Murray Morgan and Mary Ann Gwinn
 reviewed: false
 publish: true
-title: Skid Road
+title: "Skid Road"
+last_highlighted_date: 2019-07-11 04:56:00+00:00
+aliases:
+    - Skid Road
 cover_url: https://m.media-amazon.com/images/I/A13fALv29HL._SY160.jpg
 ---
 # Skid Road

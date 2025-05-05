@@ -4,7 +4,10 @@ medium: books
 author: Aron Christensen and Erica Lindquist
 reviewed: false
 publish: true
-title: From Dream to Dice
+title: "From Dream to Dice"
+last_highlighted_date: 2024-06-11 04:56:00+00:00
+aliases:
+    - From Dream to Dice
 cover_url: https://images-na.ssl-images-amazon.com/images/I/51m6KrcgyQL._SL200_.jpg
 ---
 # From Dream to Dice

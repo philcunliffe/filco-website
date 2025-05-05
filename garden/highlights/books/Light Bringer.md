@@ -4,7 +4,10 @@ medium: books
 author: Pierce Brown
 reviewed: false
 publish: true
-title: Light Bringer
+title: "Light Bringer"
+last_highlighted_date: 2024-03-17 04:56:00+00:00
+aliases:
+    - Light Bringer
 cover_url: https://m.media-amazon.com/images/I/81NlFOSxr9L._SY160.jpg
 ---
 # Light Bringer

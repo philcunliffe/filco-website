@@ -7,17 +7,20 @@ const HighlightSection = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx(
+        sort: { fields: frontmatter___last_highlighted_date, order: DESC }
         filter: {
           frontmatter: {
             note_type: { eq: "highlight" }
             medium: { eq: "books" }
           }
         }
+        limit: 12
       ) {
         nodes {
           frontmatter {
             title
             cover_url
+            last_highlighted_date
           }
         }
       }

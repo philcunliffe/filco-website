@@ -4,7 +4,10 @@ medium: books
 author: Aron Christensen
 reviewed: false
 publish: true
-title: My Guide to RPG Storytelling
+title: "My Guide to RPG Storytelling"
+last_highlighted_date: 2024-05-30 04:56:00+00:00
+aliases:
+    - My Guide to RPG Storytelling
 cover_url: https://images-na.ssl-images-amazon.com/images/I/41W7Td5GYuL._SL200_.jpg
 ---
 # My Guide to RPG Storytelling
@@ -12,6 +15,18 @@ cover_url: https://images-na.ssl-images-amazon.com/images/I/41W7Td5GYuL._SL200_.
 ![rw-book-cover](https://images-na.ssl-images-amazon.com/images/I/41W7Td5GYuL._SL200_.jpg)
 
 ## Highlights
+- The key is to remember that role-playing is a team sport. Everyone takes part and everyone contributes. ([Location 132](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=132))
+- Better to take a breather than paint yourself into a corner with rushed improvisation. ([Location 204](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=204))
+- If you’ve decided to Storytell, then tell your story. The players collaborate and weave their ([Location 239](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=239))
+- characters into your creation, not the other way around. Make things happen to the players, don’t wait for them to do everything. They don’t know your plot and they can’t guide the story alone. People should come to them for help, villains should menace them, danger should court them. Shit needs to go down and the players’ role is to react to it. You take their reactions and make it a part of the game, but the Storyteller needs to be an active force, not a passive one. ([Location 240](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=240))
+- When I plan out my games beforehand, I don’t have to devote much energy to moving the story along once the campaign begins. I know where it’s going and I know what will happen to the characters. So the rest of my energy can be devoted to running with their ideas, taking their tangents and making them work for the story. Players can enjoy their exploration and experimentation and I can use it to add to the plot instead of taking us away from it. ([Location 256](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=256))
+- I can easily cannibalize all of those notes to make up the new scene. I either use the one that I planned in whole, or else raid it for parts. ([Location 265](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=265))
+- The game should be challenging enough that players have to think and work, but they’re supposed to be the heroes of the story and I want ([Location 321](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=321))
+- them to feel heroic. Instead of putting my players into situations where a single bad die roll might cost them a character, I prefer to let them escape with a scar of some kind. Something that’s game-affecting in a small but noticeable way: a limp that costs them a little movement, the loss of an eye that raises alertness difficulties, and so on. ([Location 322](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=322))
+- But don’t throw away those weaker villains you used back in the beginning! We’re not done with them quite yet. Every once in a while, send some of those low-level baddies up against the characters – probably in larger numbers. They’re a measuring stick now and the players get to compare themselves against their earlier performance. The orc that used to take five hits now goes down in just one, and your players are piling up the bodies. It shows them how far they’ve come and how much their characters have grown in power. ([Location 346](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=346))
+- I have a formula that I use to build almost every game. I call it Map, Dragon, Treasure. It’s a simple formula. The map is a way to find out what’s happening and how to get there. The dragon is a danger that prevents your protagonists from doing so or which threatens the peace, and the treasure is the reward for success. It’s a guide, a guardian and a goal. ([Location 413](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=413))
+- bad guys don’t think they’re bad. Everyone is the hero of their own story. They may do bad things and they may ([Location 433](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=433))
+- even know that what they’re doing is bad. But in the end, they think it will accomplish something good. ([Location 434](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=434))
 - If you don’t let the players face their enemy until the end of the whole campaign, you risk your antagonist fading away or being forgotten. ([Location 474](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=474))
 - The villain has to interact with them in other ways. If they do face the player characters in combat, then you have to decide if the bad guy is going to kick their asses, or if the heroes will win. If you defeat the players, then you have to justify why the villain lets the characters live, or provide some deus ex machina to save them. ([Location 475](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=475))
 - It’s usually better to have your antagonist interact with the characters verbally, preferably in situations where a social or physical barrier prevents them from going right for each other’s throats. Maybe they meet in a temple where it’s forbidden to carry weapons, or across an impassable canyon from each other – close enough to talk and trade banter, but not close enough to fight. ([Location 482](https://readwise.io/to_kindle?action=open&asin=B009XYBS0A&location=482))

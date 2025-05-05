@@ -4,7 +4,10 @@ medium: books
 author: Brian McDonald
 reviewed: false
 publish: true
-title: Invisible Ink
+title: "Invisible Ink"
+last_highlighted_date: 2024-05-23 04:56:00+00:00
+aliases:
+    - Invisible Ink
 cover_url: https://images-na.ssl-images-amazon.com/images/I/41xQera5pfL._SL200_.jpg
 ---
 # Invisible Ink

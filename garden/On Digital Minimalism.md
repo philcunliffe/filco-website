@@ -3,6 +3,7 @@ planted: 2024-10-25 11:49
 stage: budding
 publish: true
 title: Digital Minimalism
+modified: 2024-11-30T13:37:12-07:00
 note-type: note
 ---
 # On Digital Minimalism

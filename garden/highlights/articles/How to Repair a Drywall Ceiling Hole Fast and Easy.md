@@ -5,6 +5,9 @@ author: Paul Peck DrywallTube
 reviewed: false
 publish: true
 title: "How to Repair a Drywall Ceiling Hole Fast and Easy!"
+last_highlighted_date: 2024-10-12 05:20:53.824120+00:00
+aliases:
+    - How to Repair a Drywall Ceiling Hole Fast and Easy!
 cover_url: https://i.ytimg.com/vi/YMelkdOk_HU/maxresdefault.jpg
 ---
 # How to Repair a Drywall Ceiling Hole Fast and Easy!

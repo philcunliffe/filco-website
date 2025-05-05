@@ -5,6 +5,9 @@ author: Golf Digest
 reviewed: false
 publish: true
 title: "The Clever Aiming Strategy Tour Pros Actually Use | the Game Plan | Golf Digest"
+last_highlighted_date: 2024-03-13 16:31:21.985624+00:00
+aliases:
+    - The Clever Aiming Strategy Tour Pros Actually Use | the Game Plan | Golf Digest
 cover_url: https://i.ytimg.com/vi/6HUyoAvHL88/maxresdefault.jpg
 ---
 # The Clever Aiming Strategy Tour Pros Actually Use | the Game Plan | Golf Digest

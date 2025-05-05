@@ -220,10 +220,12 @@ body {
 
 h1, h2 {
   font-family: var(--font-serif);
+  margin: var(--space-m) 0;
 }
 
 h3, h4, h5, h6 {
   font-family: var(--font-sans);
+  margin: var(--space-s) 0;
 }
 
 p, ul, ol {

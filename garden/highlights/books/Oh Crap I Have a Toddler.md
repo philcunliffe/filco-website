@@ -6,7 +6,10 @@ reviewed: true
 publish: true
 title: Oh Crap! I Have a Toddler
 cover_url: https://readwise-assets.s3.amazonaws.com/media/uploaded_book_covers/profile_1258057/855aa2bc-e7c0-4b66-b0e8-75bc935ca3c7.jpg
-modified: 2025-05-05T12:24:46-07:00
+modified: 2025-05-05T14:00:25-07:00
+aliases:
+  - Oh Crap! I Have a Toddler
+last_highlighted_date: 2025-05-01 21:40:09.045419+00:00
 ---
 # Oh Crap! I Have a Toddler
 

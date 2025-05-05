@@ -7,6 +7,7 @@ const NoteSection = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx(
+        sort: { fields: frontmatter___modified, order: DESC }
         filter: {
           frontmatter: { note_type: { eq: "note" }, publish: { eq: true } }
         }

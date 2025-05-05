@@ -4,7 +4,10 @@ medium: books
 author: Michael Shea
 reviewed: false
 publish: true
-title: Return of the Lazy Dungeon Master
+title: "Return of the Lazy Dungeon Master"
+last_highlighted_date: 2023-04-02 04:56:00+00:00
+aliases:
+    - Return of the Lazy Dungeon Master
 cover_url: https://images-na.ssl-images-amazon.com/images/I/51rAphSjRWL._SL200_.jpg
 ---
 # Return of the Lazy Dungeon Master

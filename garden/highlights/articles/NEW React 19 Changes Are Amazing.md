@@ -5,6 +5,9 @@ author: Web Dev Simplified
 reviewed: false
 publish: true
 title: "NEW React 19 Changes Are Amazing!"
+last_highlighted_date: 2024-02-28 01:04:16.976218+00:00
+aliases:
+    - NEW React 19 Changes Are Amazing!
 cover_url: https://i3.ytimg.com/vi/v07gXY6ESEo/hqdefault.jpg
 ---
 # NEW React 19 Changes Are Amazing!

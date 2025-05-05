@@ -5,6 +5,7 @@ stage: budding
 publish: true
 title: Detaching todos from PKM
 planted: 2024-10-25 11:49
+modified: 2024-11-30T13:37:12-07:00
 note-type: note
 ---
 # Detaching todos from PKM

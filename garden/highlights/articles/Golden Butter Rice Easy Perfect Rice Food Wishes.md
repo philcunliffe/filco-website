@@ -5,6 +5,9 @@ author: Food Wishes
 reviewed: false
 publish: true
 title: "Golden Butter Rice | Easy Perfect Rice | Food Wishes"
+last_highlighted_date: 2024-02-28 05:14:32.630949+00:00
+aliases:
+    - Golden Butter Rice | Easy Perfect Rice | Food Wishes
 cover_url: https://i.ytimg.com/vi/LNllkOdH6kY/maxresdefault.jpg
 ---
 # Golden Butter Rice | Easy Perfect Rice | Food Wishes

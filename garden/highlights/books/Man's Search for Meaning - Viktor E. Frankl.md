@@ -5,6 +5,9 @@ author: Viktor Frankl
 reviewed: false
 publish: true
 title: "Man's Search for Meaning - Viktor E. Frankl"
+last_highlighted_date: 2025-04-25 21:40:09.045419+00:00
+aliases:
+    - Man's Search for Meaning - Viktor E. Frankl
 cover_url: https://readwise-assets.s3.amazonaws.com/static/images/default-book-icon-6.71d9a01814f7.png
 ---
 # Man's Search for Meaning - Viktor E. Frankl

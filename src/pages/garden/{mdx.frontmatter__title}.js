@@ -45,6 +45,10 @@ const LimitedWidth = styled.div`
     font-size: var(--step-2);
   }
 
+  h3 { font-size: var(--step-1); }
+  h4 { font-size: var(--step-0); }
+  h5 { font-size: var(--step--1); }
+
   h1,
   h2 {
     letter-spacing: -1px;
