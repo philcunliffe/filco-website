@@ -6,3 +6,6 @@ garden2/
 .DS_Store
 **/.DS_Store
 garden/.obsidian/
+garden/.makemd/
+garden/.stfolder/
+garden/.space/

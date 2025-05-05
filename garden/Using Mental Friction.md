@@ -4,7 +4,7 @@ stage: seedling
 publish: false
 title: Self-Conditioning with Mental Friction
 note-type: note
-modified: 2024-11-04T16:03:22-08:00
+modified: 2024-11-05T13:20:07-08:00
 ---
 # Using Mental Friction
 
@@ -12,5 +12,7 @@ modified: 2024-11-04T16:03:22-08:00
 	- Examples
 		- Focus apps
 		- Putting the phone in the other room
+- Books talk about making things easier to encourage behavior but not as much about adding friction
+- Youtube browsing vs download example
 - 
 
