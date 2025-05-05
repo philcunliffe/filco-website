@@ -10,7 +10,6 @@ aliases:
 ---
 # Oh Crap! I Have a Toddler: In A Nutshell
 ---
-This page is not complete and is in-progress
 ## Why did I read it?
 
 Because I have a toddler and it's freaking hard. This is definitely my most highlighted book of all time so this review will also likely be quite lengthy.
