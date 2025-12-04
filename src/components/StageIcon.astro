@@ -1,0 +1,16 @@
+---
+interface Props {
+  stage?: string;
+}
+
+const { stage } = Astro.props;
+
+function stageToIcon(status?: string): string {
+  if (status === 'seedling') return '\u{1F331}'; // seedling emoji
+  if (status === 'budding') return '\u{1F33F}'; // herb emoji
+  if (status === 'evergreen') return '\u{1F332}'; // evergreen tree emoji
+  return '';
+}
+---
+
+<span>{stageToIcon(stage)}</span>

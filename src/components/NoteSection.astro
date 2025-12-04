@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Note from './Note.astro';
+
+const allPosts = await getCollection('garden', ({ data }) => {
+  const noteType = data['note-type'] || data['note_type'];
+  return noteType === 'note' && data.publish === true;
+});
+
+// Sort by modified date descending and limit to 14
+const notes = allPosts
+  .sort((a, b) => {
+    const dateA = a.data.modified ? new Date(a.data.modified).getTime() : 0;
+    const dateB = b.data.modified ? new Date(b.data.modified).getTime() : 0;
+    return dateB - dateA;
+  })
+  .slice(0, 14);
+---
+
+<section class="notes-section">
+  <h5>Notes</h5>
+  <div class="flex-box">
+    {
+      notes.map((post) => (
+        <Note
+          title={post.data.title}
+          stage={post.data.stage}
+          planted={post.data.planted}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .notes-section {
+    grid-column: 1 / 9;
+    grid-row: 4;
+  }
+
+  .notes-section h5 {
+    margin: var(--space-xs) 0;
+  }
+
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    row-gap: var(--space-s);
+    column-gap: var(--space-s);
+    padding-right: var(--space-s);
+  }
+</style>

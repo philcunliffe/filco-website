@@ -1,0 +1,143 @@
+{
+  "$ref": "#/definitions/garden",
+  "definitions": {
+    "garden": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "planted": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "modified": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "stage": {
+          "type": "string",
+          "enum": [
+            "seedling",
+            "budding",
+            "evergreen"
+          ]
+        },
+        "publish": {
+          "type": "boolean",
+          "default": false
+        },
+        "note-type": {
+          "type": "string",
+          "enum": [
+            "note",
+            "essay",
+            "highlight",
+            "journal"
+          ]
+        },
+        "note_type": {
+          "type": "string",
+          "enum": [
+            "note",
+            "essay",
+            "highlight",
+            "journal"
+          ]
+        },
+        "medium": {
+          "type": "string"
+        },
+        "cover_url": {
+          "type": "string"
+        },
+        "last_highlighted_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "author": {
+          "type": "string"
+        },
+        "aliases": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewed": {
+          "type": "boolean"
+        },
+        "tags": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

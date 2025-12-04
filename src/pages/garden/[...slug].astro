@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import GardenLayout from '../../layouts/GardenLayout.astro';
+import slugify from '@sindresorhus/slugify';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('garden');
+  // Filter out posts without titles
+  return posts
+    .filter((post) => post.data.title)
+    .map((post) => ({
+      params: { slug: slugify(post.data.title as string) },
+      props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<GardenLayout title={post.data.title || 'Untitled'}>
+  <Content />
+</GardenLayout>

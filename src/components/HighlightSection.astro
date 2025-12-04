@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Highlight from './Highlight.astro';
+
+const allPosts = await getCollection('garden', ({ data }) => {
+  const noteType = data['note-type'] || data['note_type'];
+  return noteType === 'highlight' && data.medium === 'books';
+});
+
+// Sort by last_highlighted_date descending and limit to 12
+const highlights = allPosts
+  .sort((a, b) => {
+    const dateA = a.data.last_highlighted_date
+      ? new Date(a.data.last_highlighted_date).getTime()
+      : 0;
+    const dateB = b.data.last_highlighted_date
+      ? new Date(b.data.last_highlighted_date).getTime()
+      : 0;
+    return dateB - dateA;
+  })
+  .slice(0, 12);
+---
+
+<section class="highlights-section">
+  <h5>Highlights</h5>
+  <div class="flex-box">
+    {
+      highlights.map((post) => (
+        <Highlight title={post.data.title} coverUrl={post.data.cover_url} />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .highlights-section {
+    grid-column: 9 / 13;
+    grid-row: 3 / 5;
+  }
+
+  .highlights-section h5 {
+    margin: var(--space-xs) 0;
+  }
+
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    row-gap: var(--space-s);
+    column-gap: var(--space-s);
+    padding-top: var(--space-xs);
+  }
+</style>

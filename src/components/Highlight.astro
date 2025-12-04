@@ -1,0 +1,26 @@
+---
+import slugify from '@sindresorhus/slugify';
+
+interface Props {
+  title: string;
+  coverUrl?: string;
+}
+
+const { title, coverUrl } = Astro.props;
+const href = `/garden/${slugify(title)}`;
+---
+
+<a href={href} class="highlight" style={`background-image: url(${coverUrl})`}>
+</a>
+
+<style>
+  .highlight {
+    --section-width: calc(var(--grid-column-width) * 3 + var(--grid-gutter) * 2);
+    --cover-width: min(calc((var(--section-width) - var(--space-s)) / 2), 130px);
+    width: var(--cover-width);
+    height: min(calc(var(--cover-width) * 200 / 130), 200px);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: block;
+  }
+</style>

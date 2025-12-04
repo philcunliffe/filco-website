@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import SEO from '../components/SEO.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  showHeader?: boolean;
+}
+
+const { title, description, image, showHeader = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/icons/icon-512x512.png" />
+    <SEO title={title} description={description} image={image} />
+    <ViewTransitions />
+  </head>
+  <body>
+    {showHeader && <Header />}
+    <main class="u-container">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main {
+    padding: var(--space-l) var(--space-xl) var(--space-xl);
+    min-height: calc(100vh - var(--footer-height));
+    background: var(--cream-stone);
+  }
+</style>

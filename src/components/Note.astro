@@ -1,0 +1,57 @@
+---
+import StageIcon from './StageIcon.astro';
+import { timeAgo } from '../utils/time-ago';
+import slugify from '@sindresorhus/slugify';
+
+interface Props {
+  title: string;
+  stage?: string;
+  planted?: Date;
+}
+
+const { title, stage, planted } = Astro.props;
+const href = `/garden/${slugify(title)}`;
+---
+
+<a href={href} class="note">
+  <div class="icon-container">
+    <StageIcon stage={stage} />
+  </div>
+  <div class="info-container">
+    <p class="note-title">{title}</p>
+    <span class="planted">{timeAgo(planted)}</span>
+  </div>
+</a>
+
+<style>
+  .note {
+    display: flex;
+    flex: calc(50% - (var(--space-m) / 2)) 0 1;
+    justify-content: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .icon-container {
+    display: flex;
+    flex: 0 0;
+    font-size: var(--step-1);
+    padding-top: var(--space-2xs);
+    justify-content: center;
+  }
+
+  .info-container {
+    flex-grow: 1;
+    padding: var(--space-2xs);
+  }
+
+  .note-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .planted {
+    font-size: var(--step--2);
+  }
+</style>

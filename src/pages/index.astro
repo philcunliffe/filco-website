@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EssaysSection from '../components/EssaysSection.astro';
+import NoteSection from '../components/NoteSection.astro';
+import HighlightSection from '../components/HighlightSection.astro';
+---
+
+<BaseLayout title="Home">
+  <div class="home-grid u-grid">
+    <div class="banner-spacer">
+      <div class="banner">
+        <h1 class="name">
+          Phil Cunliffe<a href="/about">?</a>
+        </h1>
+        <p class="description">
+          takes notes on web-development, fatherhood, and digital minimalism
+        </p>
+        <p class="currently">Currently a founding engineer at <a href="https://hyperparam.app"><strong>Hyperparam</strong></a></p>
+      </div>
+    </div>
+    <div class="garden-header">
+      <h2 class="garden-title">Essays &amp; Notes</h2>
+      <p class="garden-description">
+        Learn more about digital gardens from{' '}
+        <a href="https://maggieappleton.com/garden-history">Maggie Appleton</a>
+      </p>
+    </div>
+    <EssaysSection />
+    <NoteSection />
+    <HighlightSection />
+  </div>
+</BaseLayout>
+
+<style>
+  .banner-spacer {
+    min-height: 73vh;
+    grid-column: 1 / 13;
+    grid-row: 1;
+  }
+
+  .name {
+    margin: 0;
+    padding: 0;
+    font-family: 'Londrina Shadow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--step-8);
+  }
+
+  .name a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--step-2);
+    width: 1.2em;
+    height: 1.2em;
+    transform: translateY(calc(-1 * var(--step-5))) rotate(10deg);
+    border: 1px solid var(--jade-700);
+    border-width: 1px 3px 2px 1px;
+    border-radius: 0.5em 0.6em;
+  }
+
+  .description {
+    padding: 0;
+    margin: calc(-1 * var(--space-s)) 0 0 0;
+    font-family: 'Koh Santepheap', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--step-2);
+  }
+
+  .currently {
+    padding: var(--space-m) 0 0 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .banner {
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+    display: grid;
+    max-width: 1000px;
+  }
+
+  .garden-title {
+    font-size: var(--step-3);
+  }
+
+  .garden-header {
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 2;
+  }
+</style>

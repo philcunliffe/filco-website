@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Essay from './Essay.astro';
+
+const allPosts = await getCollection('garden', ({ data }) => {
+  const noteType = data['note-type'] || data['note_type'];
+  return noteType === 'essay' && data.publish === true;
+});
+
+// Limit to 1 essay
+const essays = allPosts.slice(0, 1);
+---
+
+<section class="essays-section">
+  <h5>Essays</h5>
+  <div class="flex-box">
+    {
+      essays.map((post) => (
+        <Essay
+          title={post.data.title}
+          stage={post.data.stage}
+          planted={post.data.planted}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .essays-section {
+    grid-column: 1 / 9;
+    grid-row: 3;
+  }
+
+  .essays-section h5 {
+    margin: var(--space-xs) 0;
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    row-gap: var(--space-s);
+    column-gap: var(--space-s);
+    padding-right: var(--space-s);
+  }
+</style>
