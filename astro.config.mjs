@@ -4,7 +4,7 @@ import { remarkWikiLinks } from './src/utils/remark-wiki-links';
 
 export default defineConfig({
   site: 'https://www.philcunliffe.dev',
-  outDir: './public',
+  outDir: './dist',
   integrations: [mdx()],
   markdown: {
     shikiConfig: {
